@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, ImageBackground, Button} from 'react-native';
+import { StyleSheet, View, ImageBackground} from 'react-native';
 import Texto from '../components/texto';
 import Degrade from '../assets/fundo2.png';
 import CheckBoxC from '../components/CheckBox';
