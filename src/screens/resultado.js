@@ -7,10 +7,21 @@ import Texto from '../components/texto';
 import Natureza from '../assets/natureza.png';
 import Degrade from '../assets/fundo2.png';
 
+import Menu from '../components/menu';
 
 
 
 export default class Resultado extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {}
+  }
+
+  // static navigationOptions = ({navigation}) => ({
+  //   title: 'Resultado'
+  // });
+
   render() {
     return (
       <View style={styles.container}>
@@ -25,6 +36,7 @@ export default class Resultado extends React.Component {
               </Text>
             </View>
           </View>
+          <Menu/>
         </ImageBackground>
       </View>
     );

@@ -11,6 +11,12 @@ import Vnw from '../assets/vnw.png';
 
 
 export default class Login extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {}
+  }
+  
   render() {
     return (
       <View style={styles.container}>

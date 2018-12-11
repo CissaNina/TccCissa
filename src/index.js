@@ -7,13 +7,19 @@ import Perfil from './screens/perfil';
 import Login from './screens/login';
 import CheckBoxC from './components/CheckBox';
 
+import Router from './router';
+
 
 
 export default class JC extends React.Component {
     render() {
       return (
-        // <View style={styles.container}></View>
-        <Avaliando/>
+        // <Loading/>
+        <Login/>
+        // <Perfil/>
+        // <Objeto/>
+        // <Avaliando/>
+        // <Resultado/>
       );
     }
   }

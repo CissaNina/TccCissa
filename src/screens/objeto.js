@@ -9,12 +9,22 @@ import Book from '../assets/EDucação.png';
 import WORK from '../assets/Ativo20.png';
 import DESENVOLVIMENTO from '../assets/desenv.png';
 import FAMILY from '../assets/family.png';
-import SAUD from '../assets/saud.png'
+import SAUD from '../assets/saud.png';
+import Menu from '../components/menu';
+
 
 
 
 export default class Objeto extends React.Component {
   
+  // static navigationOptions = ({navigation}) => ({
+  //   title: 'Objeto'
+  // });
+
+  constructor(props) {
+    super(props);
+    this.state = {}
+  }
 
   render() {
     return (
@@ -57,7 +67,7 @@ export default class Objeto extends React.Component {
           </TouchableHighlight>
         </View>
         
-        
+        <Menu/>
         </ImageBackground>
       </View>
     );
@@ -82,7 +92,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
     borderRadius: 10,
     marginLeft: 18,
-    marginTop: 20
+    marginTop: 15
   },
   Tentativa:{
     width:'60%',
@@ -115,7 +125,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
     borderRadius: 10,
     marginLeft: 18,
-    marginTop: 15
+    marginTop: 10
   },
   buttonRetangularAzul:{
     width:'42.5%',
@@ -125,7 +135,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
     borderRadius: 10,
     marginLeft: 18,
-    marginTop: 15
+    marginTop: 10
   },
   ImgWork:{
     width:'65%',

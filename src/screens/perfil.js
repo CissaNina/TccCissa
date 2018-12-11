@@ -3,20 +3,26 @@ import { StyleSheet, View, ImageBackground, Picker,Image } from 'react-native';
 
 import Imput from '../components/imput';
 import Texto from '../components/texto';
+import Menu from '../components/menu';
 import Degrade from '../assets/fundo2.png';
 import Man from '../assets/human.png';
 import Jc from '../assets/logo-jc.png';
 
 export default class Perfil extends React.Component {
+
+  // static navigationOptions = ({navigation}) => ({
+  //   title: 'Perfil'
+  // });
+
   constructor(props){
       super (props);
       this.state = {
         opcao:0,
         sexo:[
           {nome:'Sexo'},
-          {nome: 'Feminino'},
+          {nome:'Não Informar'},
           {nome:'Masculino'},
-          {nome:'Não Informar'}
+          {nome: 'Feminino'}
         ]
       };
   }  
@@ -46,6 +52,7 @@ export default class Perfil extends React.Component {
           </Picker>
         </View>
          <Imput placeholder="Edição"/> 
+         <Menu/>
          </ImageBackground>
         </View>
       );

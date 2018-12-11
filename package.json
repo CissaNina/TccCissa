@@ -11,7 +11,8 @@
     "react-native": "0.57.7",
     "react-native-check-box": "^2.1.6",
     "react-native-gesture-handler": "^1.0.10",
-    "react-navigation": "^3.0.5"
+    "react-native-hide-show-password-input": "^1.0.7",
+    "react-navigation": "^3.0.6"
   },
   "devDependencies": {
     "babel-jest": "23.6.0",
